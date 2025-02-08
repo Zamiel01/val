@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img active">
+          <img src="Images/7.jpeg" alt="7" />
+          <h1>!</h1>
+          <div class="details">
+            <h2>!</h2>
+            <p>Thanks for being a great friend.</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/1.jpeg" alt="1" />
+          <h1>A</h1>
+          <div class="details">
+            <h2>A</h2>
+            <p>We've shared some great times together.</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/2.jpeg" alt="2" />
+          <h1>S</h1>
+          <div class="details">
+            <h2>S</h2>
+            <p>Thanks for always being there.</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/3.jpeg" alt="3" />
+          <h1>H</h1>
+          <div class="details">
+            <h2>H</h2>
+            <p>You're a solid friend.</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/4.jpeg" alt="4" />
+          <h1>L</h1>
+          <div class="details">
+            <h2>L</h2>
+            <p>Appreciate your support.</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/5.jpeg" alt="5" />
+          <h1>E</h1>
+          <div class="details">
+            <h2>E</h2>
+            <p>Always fun hanging out with you.</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/6.jpeg" alt="6" />
+          <h1>Y</h1>
+          <div class="details">
+            <h2>Y</h2>
+            <p>Good times, good memories.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
